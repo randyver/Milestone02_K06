@@ -1,4 +1,21 @@
+import cv2
+import pickle
+import cvzone
+import numpy as np
+import serial
 
+# Inisialisasi port serial
+ser = serial.Serial()
+ser.baudrate = 9600
+ser.port = 'COM5'
+ser.open()
+
+cap = cv2.VideoCapture(1)
+
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+
+status_list = []
 
 
 
