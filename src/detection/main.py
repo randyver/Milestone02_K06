@@ -23,16 +23,30 @@ def checkParkingSpace(imgPro):
     for i, pos in enumerate(posList):
         x,y = pos
 
-available_parking_spaces = [
-    i for i in range(len(posList)) if cv2.countNonZero(imgPro[posList[i][1]:posList[i][1] + height, posList[i][0]:posList[i][0] + width]) <= 500]
+        imgCrop = imgPro[y:y+height, x:x+width]
+        # cv2.imshow(str(x*y), imgCrop)
+        count = cv2.countNonZero(imgCrop)
+        cvzone.putTextRect(img, str(count), (x,y+height-10), scale=1.5, thickness=2)
+    
+        if count <= 500:
+            color = (0, 255, 0)
+            count_empty += 1
+        else:
+            color = (0, 0, 255)
+        
 
-if count_empty == 0:
+        cv2.rectangle(img, pos, (pos[0] + width, pos[1] + height), color, 3)
+
+    available_parking_spaces = [
+        i for i in range(len(posList)) if cv2.countNonZero(imgPro[posList[i][1]:posList[i][1] + height, posList[i][0]:posList[i][0] + width]) <= 500]
+
+    if count_empty == 0:
+        ser.write((str(count_empty) + '\n').encode('utf-8'))
+
+    if count_empty > 0:
+        ser.write((str(available_parking_spaces[0] + 100) + '\n').encode('utf-8'))
+
     ser.write((str(count_empty) + '\n').encode('utf-8'))
-
-if count_empty > 0:
-    ser.write((str(available_parking_spaces[0] + 100) + '\n').encode('utf-8'))
-
-ser.write((str(count_empty) + '\n').encode('utf-8'))
 
 
 with open('KotakParkir', 'rb') as f:
