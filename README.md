@@ -1,5 +1,9 @@
 # Sistem Manajemen Parkir Dengan Deteksi Ketersediaan Tempat Parkir Berbasis Kamera
 
+<p align="center">
+<img src="https://drive.google.com/file/d/1JuSMITXgxpVsnIv-qJIOxs_H-B1MWJkC/view?usp=sharing" alt="milestone" width="500">
+</p>
+
 ## Masalah
 Mencari tempat parkir seringkali menjadi masalah yang sulit dihadapi, terutama di kota-kota besar di mana kepadatan kendaraan sangat tinggi dan ruang terbatas. Ketersediaan lahan parkir yang terbatas menyebabkan waktu yang banyak terbuang dalam mencari tempat parkir yang tersedia. Oleh karena itu, dibutuhkan solusi yang efektif untuk mengatasi masalah sulitnya mencari tempat parkir.
 
@@ -40,7 +44,23 @@ pip install pyserial
 ```
 
 ## Cara Menggunakan Program
-on going
+1.	Tangkap satu frame gambar pada kamera yang dipasang
+2.	Masukkan file image tersebut ke folder detection
+3.	Jalankan program PosisiParkir.py
+```
+python PosisiParkir.py
+```
+4.	Buat kotak-kotak parkir dengan klik kiri untuk menggambar dan klik kanan untuk menghapus
+5.	Arahkan kamera ke tempat parker yang ingin dideteksi
+6.	Kotak-kotak parkir sudah dibuat, lalu jalankan program main.py
+```
+python main.py
+```
+7.	Warna hijau menandakan parkir tersedia dan warna merah parkir terisi
+8.	Jika terhubung dengan Arduino seperti program yang dibuat pada repo ini, maka data akan dikirimkan melalui serial. Saat button diklik, maka palang parkir terbuka dan pengguna parkir akan diarahkan ke parkiran yang kosong. Informasi jumlah parkir yang tersedia akan ditampilkan pada lcd secara real-time.
+
+## Demonstrasi Program
+
 
 ## Anggota Kelompok dan Kontribusi
 
