@@ -42,3 +42,24 @@ pip install pyserial
 
 ## Anggota Kelompok dan Kontribusi
 
+Programming
+
+1.	Randy Verdian - 19622229
+2.	Satriadhikara Panji Yudisthira – 19622274
+3.	Juan Sohuturon Arauna Siagian – 19622148
+4.	Francesco Michael Kusuma - 19622063
+
+Prototyping
+
+1.	Muhammad Al Thariq Fairuz – 19622026
+2.	Thea Josephine Halim – 19622062
+3.	Hanan Fitra Salam – 19622277
+4.	M. Kasyfil Aziz – 19622238
+5.	Filbert – 19622041
+6.	Diero Arga Purnama – 19622153
+
+Content
+
+1.	Nasywaa Anggun Athiefah – 19622309
+2.	Adinda Khairunnisa Indraputri – 19622229
+3.	Muhammad Rafi Dhiyaulhaq – 19622158 
