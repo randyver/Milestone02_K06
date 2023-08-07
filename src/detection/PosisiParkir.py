@@ -7,7 +7,7 @@ width, height = 80, 120
 
 # read file KotakParkir
 try:
-    with open('KotakParkir', 'rb') as f:
+    with open('src/detection/KotakParkir', 'rb') as f:
         posList = pickle.load(f)
 except:
     posList = []
@@ -23,11 +23,11 @@ def mouseClick(events, x, y, flags, params):
                 posList.pop(i)
 
     # update data
-    with open('KotakParkir', 'wb') as f:
+    with open('src/detection/KotakParkir', 'wb') as f:
         pickle.dump(posList, f)
 
 while True:
-    img = cv2.imread('image.jpg')
+    img = cv2.imread('src/detection/img-parkir.jpg')
 
     # draw rectangle
     for pos in posList:
