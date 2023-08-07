@@ -46,7 +46,7 @@ def checkParkingSpace(imgPro):
     ser.write((str(count_empty) + '\n').encode('utf-8'))
 
 
-with open('KotakParkir', 'rb') as f:
+with open('src/detection/KotakParkir', 'rb') as f:
     posList = pickle.load(f)
 
 width, height = 80, 120
