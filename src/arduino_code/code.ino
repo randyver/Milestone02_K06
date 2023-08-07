@@ -77,7 +77,7 @@ void loop() {
   }
  
   if (open == true) {
-    drain.write(90);
+    drain.write(135);
     if (Serial.available()) {
       int data = Serial.parseInt();
       Serial.println(data);
@@ -92,7 +92,7 @@ void loop() {
   }
   else {
    
-    drain.write(0);
+    drain.write(45);
    
     if (Serial.available() > 0) {
       int numFree = Serial.parseInt();  // menerima data jumlah tempat parkir kosong dari Python
