@@ -46,7 +46,7 @@ on going
 
 Programming
 
-1.	Randy Verdian - 19622229
+1.	Randy Verdian - 19622202
 2.	Satriadhikara Panji Yudisthira – 19622274
 3.	Juan Sohuturon Arauna Siagian – 19622148
 4.	Francesco Michael Kusuma - 19622063
