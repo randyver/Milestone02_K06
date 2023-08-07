@@ -39,6 +39,7 @@ pip install pyserial
 ```
 
 ## Cara Menggunakan Program
+on going
 
 ## Anggota Kelompok dan Kontribusi
 
