@@ -60,6 +60,7 @@ python main.py
 8.	Jika terhubung dengan Arduino seperti program yang dibuat pada repo ini, maka data akan dikirimkan melalui serial. Saat button diklik, maka palang parkir terbuka dan pengguna parkir akan diarahkan ke parkiran yang kosong. Informasi jumlah parkir yang tersedia akan ditampilkan pada lcd secara real-time.
 
 ## Demonstrasi Program
+[Link Demonstrasi](https://drive.google.com/drive/folders/1PETzjhlq0cf07AJ41RG7I8qPaSvyFDwo?usp=sharing)
 
 
 ## Anggota Kelompok dan Kontribusi
