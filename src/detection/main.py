@@ -19,12 +19,10 @@ status_list = []
 
 def checkParkingSpace(imgPro):
     count_empty = 0
-    #count_occupied = 0
     for i, pos in enumerate(posList):
         x,y = pos
 
         imgCrop = imgPro[y:y+height, x:x+width]
-        # cv2.imshow(str(x*y), imgCrop)
         count = cv2.countNonZero(imgCrop)
         cvzone.putTextRect(img, str(count), (x,y+height-10), scale=1.5, thickness=2)
     
@@ -34,7 +32,6 @@ def checkParkingSpace(imgPro):
         else:
             color = (0, 0, 255)
         
-
         cv2.rectangle(img, pos, (pos[0] + width, pos[1] + height), color, 3)
 
     available_parking_spaces = [
