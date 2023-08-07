@@ -1,7 +1,7 @@
 # Sistem Manajemen Parkir Dengan Deteksi Ketersediaan Tempat Parkir Berbasis Kamera
 
 <p align="center">
-<img src="https://drive.google.com/file/d/1JuSMITXgxpVsnIv-qJIOxs_H-B1MWJkC/view?usp=sharing" alt="milestone" width="500">
+<img src="https://drive.google.com/uc?id=1JuSMITXgxpVsnIv-qJIOxs_H-B1MWJkC" alt="milestone" width="500">
 </p>
 
 ## Masalah
